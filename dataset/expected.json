@@ -1,0 +1,374 @@
+[
+  {
+    "alert_id": "A-001",
+    "alert_type": "suspicious_login",
+    "indicators": {
+      "ip": "198.51.100.23",
+      "user": "fexri"
+    },
+    "expected_verdict": "uncertain",
+    "expected_action": "analyst_review",
+    "expected_severity": "medium"
+  },
+  {
+    "alert_id": "A-002",
+    "alert_type": "malicious_hash",
+    "indicators": {
+      "hash": "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f"
+    },
+    "expected_verdict": "malicious",
+    "expected_action": "escalate",
+    "expected_severity": "high"
+  },
+  {
+    "alert_id": "A-003",
+    "alert_type": "suspicious_login",
+    "indicators": {
+      "ip": "192.0.2.12",
+      "user": "aysel"
+    },
+    "expected_verdict": "benign",
+    "expected_action": "auto_close",
+    "expected_severity": "low"
+  },
+  {
+    "alert_id": "A-004",
+    "alert_type": "suspicious_url",
+    "indicators": {
+      "domain": "free-gift-claim.test"
+    },
+    "expected_verdict": "malicious",
+    "expected_action": "escalate",
+    "expected_severity": "high"
+  },
+  {
+    "alert_id": "A-005",
+    "alert_type": "suspicious_url",
+    "indicators": {
+      "domain": "newly-registered-shop.test"
+    },
+    "expected_verdict": "uncertain",
+    "expected_action": "analyst_review",
+    "expected_severity": "medium"
+  },
+  {
+    "alert_id": "A-006",
+    "alert_type": "malicious_hash",
+    "indicators": {
+      "hash": "4594de378f982aeabd992faf1d1d81037e08e023bcd760aad47372e5e58e94fd"
+    },
+    "expected_verdict": "benign",
+    "expected_action": "auto_close",
+    "expected_severity": "low"
+  },
+  {
+    "alert_id": "A-007",
+    "alert_type": "suspicious_url",
+    "indicators": {
+      "domain": "github.com"
+    },
+    "expected_verdict": "benign",
+    "expected_action": "auto_close",
+    "expected_severity": "low"
+  },
+  {
+    "alert_id": "A-008",
+    "alert_type": "suspicious_url",
+    "indicators": {
+      "domain": "paypa1-verify.test"
+    },
+    "expected_verdict": "malicious",
+    "expected_action": "escalate",
+    "expected_severity": "high"
+  },
+  {
+    "alert_id": "A-009",
+    "alert_type": "malicious_hash",
+    "indicators": {
+      "hash": "486925495fefc035a58e8139f764624df0b1b819abbd208a190b7ba0a527f57c"
+    },
+    "expected_verdict": "uncertain",
+    "expected_action": "analyst_review",
+    "expected_severity": "medium"
+  },
+  {
+    "alert_id": "A-010",
+    "alert_type": "suspicious_url",
+    "indicators": {
+      "domain": "office365-update.test"
+    },
+    "expected_verdict": "malicious",
+    "expected_action": "escalate",
+    "expected_severity": "high"
+  },
+  {
+    "alert_id": "A-011",
+    "alert_type": "suspicious_url",
+    "indicators": {
+      "domain": "wikipedia.org"
+    },
+    "expected_verdict": "benign",
+    "expected_action": "auto_close",
+    "expected_severity": "low"
+  },
+  {
+    "alert_id": "A-012",
+    "alert_type": "suspicious_login",
+    "indicators": {
+      "ip": "198.51.100.41",
+      "user": "hesenali"
+    },
+    "expected_verdict": "uncertain",
+    "expected_action": "analyst_review",
+    "expected_severity": "medium"
+  },
+  {
+    "alert_id": "A-013",
+    "alert_type": "suspicious_login",
+    "indicators": {
+      "ip": "198.51.100.60",
+      "user": "murad"
+    },
+    "expected_verdict": "uncertain",
+    "expected_action": "analyst_review",
+    "expected_severity": "medium"
+  },
+  {
+    "alert_id": "A-014",
+    "alert_type": "suspicious_url",
+    "indicators": {
+      "domain": "google.com"
+    },
+    "expected_verdict": "benign",
+    "expected_action": "auto_close",
+    "expected_severity": "low"
+  },
+  {
+    "alert_id": "A-015",
+    "alert_type": "suspicious_login",
+    "indicators": {
+      "ip": "198.51.100.7",
+      "user": "nilufer"
+    },
+    "expected_verdict": "uncertain",
+    "expected_action": "analyst_review",
+    "expected_severity": "medium"
+  },
+  {
+    "alert_id": "A-016",
+    "alert_type": "malicious_hash",
+    "indicators": {
+      "hash": "93c60198403c92bbbfc1031722c204736f7988aac33a24056b27fae997cdc42f"
+    },
+    "expected_verdict": "uncertain",
+    "expected_action": "analyst_review",
+    "expected_severity": "medium"
+  },
+  {
+    "alert_id": "A-017",
+    "alert_type": "malicious_hash",
+    "indicators": {
+      "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_verdict": "benign",
+    "expected_action": "auto_close",
+    "expected_severity": "low"
+  },
+  {
+    "alert_id": "A-018",
+    "alert_type": "suspicious_url",
+    "indicators": {
+      "domain": "promo-offers-2026.test"
+    },
+    "expected_verdict": "uncertain",
+    "expected_action": "analyst_review",
+    "expected_severity": "medium"
+  },
+  {
+    "alert_id": "A-019",
+    "alert_type": "suspicious_login",
+    "indicators": {
+      "ip": "192.0.2.13",
+      "user": "leman"
+    },
+    "expected_verdict": "benign",
+    "expected_action": "auto_close",
+    "expected_severity": "low"
+  },
+  {
+    "alert_id": "A-020",
+    "alert_type": "suspicious_url",
+    "indicators": {
+      "domain": "secure-login-bank.test"
+    },
+    "expected_verdict": "malicious",
+    "expected_action": "escalate",
+    "expected_severity": "high"
+  },
+  {
+    "alert_id": "A-021",
+    "alert_type": "suspicious_login",
+    "indicators": {
+      "ip": "203.0.113.5",
+      "user": "admin"
+    },
+    "expected_verdict": "malicious",
+    "expected_action": "escalate",
+    "expected_severity": "high"
+  },
+  {
+    "alert_id": "A-022",
+    "alert_type": "suspicious_url",
+    "indicators": {
+      "domain": "file-share-temp.test"
+    },
+    "expected_verdict": "uncertain",
+    "expected_action": "analyst_review",
+    "expected_severity": "medium"
+  },
+  {
+    "alert_id": "A-023",
+    "alert_type": "malicious_hash",
+    "indicators": {
+      "hash": "9e5209374729b35772f3f09ee11432ef9d5d892a2b96678b9d71119937a9581f"
+    },
+    "expected_verdict": "malicious",
+    "expected_action": "escalate",
+    "expected_severity": "high"
+  },
+  {
+    "alert_id": "A-024",
+    "alert_type": "malicious_hash",
+    "indicators": {
+      "hash": "b65b8a096a3a9dfb05dcf2bf398b0a413c5aaa6f7509010f25ed563ff357f1f1"
+    },
+    "expected_verdict": "benign",
+    "expected_action": "auto_close",
+    "expected_severity": "low"
+  },
+  {
+    "alert_id": "A-025",
+    "alert_type": "suspicious_login",
+    "indicators": {
+      "ip": "203.0.113.14",
+      "user": "svc_backup"
+    },
+    "expected_verdict": "malicious",
+    "expected_action": "escalate",
+    "expected_severity": "high"
+  },
+  {
+    "alert_id": "A-026",
+    "alert_type": "suspicious_url",
+    "indicators": {
+      "domain": "cdn-static-files.test"
+    },
+    "expected_verdict": "uncertain",
+    "expected_action": "analyst_review",
+    "expected_severity": "medium"
+  },
+  {
+    "alert_id": "A-027",
+    "alert_type": "suspicious_url",
+    "indicators": {
+      "domain": "microsoft.com"
+    },
+    "expected_verdict": "benign",
+    "expected_action": "auto_close",
+    "expected_severity": "low"
+  },
+  {
+    "alert_id": "A-028",
+    "alert_type": "malicious_hash",
+    "indicators": {
+      "hash": "d653225a69f8c058820281fec06c75ac1c959c5eed83774faa01edab7886186a"
+    },
+    "expected_verdict": "uncertain",
+    "expected_action": "analyst_review",
+    "expected_severity": "medium"
+  },
+  {
+    "alert_id": "A-029",
+    "alert_type": "suspicious_login",
+    "indicators": {
+      "ip": "203.0.113.22",
+      "user": "administrator"
+    },
+    "expected_verdict": "malicious",
+    "expected_action": "escalate",
+    "expected_severity": "high"
+  },
+  {
+    "alert_id": "A-030",
+    "alert_type": "malicious_hash",
+    "indicators": {
+      "hash": "e77ef48c7f582a707e446f675d9a4402c7998eccb7d009ab917c56a1a6cf861a"
+    },
+    "expected_verdict": "uncertain",
+    "expected_action": "analyst_review",
+    "expected_severity": "medium"
+  },
+  {
+    "alert_id": "A-031",
+    "alert_type": "suspicious_login",
+    "indicators": {
+      "ip": "192.0.2.11",
+      "user": "emil"
+    },
+    "expected_verdict": "benign",
+    "expected_action": "auto_close",
+    "expected_severity": "low"
+  },
+  {
+    "alert_id": "A-032",
+    "alert_type": "malicious_hash",
+    "indicators": {
+      "hash": "a1c63549894f6683c592c59cc82542f51955866e099f3e5c6b62cc2cf091291d"
+    },
+    "expected_verdict": "malicious",
+    "expected_action": "escalate",
+    "expected_severity": "high"
+  },
+  {
+    "alert_id": "A-033",
+    "alert_type": "malicious_hash",
+    "indicators": {
+      "hash": "fdb53829039f2a4b6d863d14217e92dab1f1b00228f1d7665924e548a9242269"
+    },
+    "expected_verdict": "malicious",
+    "expected_action": "escalate",
+    "expected_severity": "high"
+  },
+  {
+    "alert_id": "A-034",
+    "alert_type": "malicious_hash",
+    "indicators": {
+      "hash": "9eaa3d9b0f203d869070fed43310c7a33e32df85ddccf0b03a91ce7633f1b8e7"
+    },
+    "expected_verdict": "benign",
+    "expected_action": "auto_close",
+    "expected_severity": "low"
+  },
+  {
+    "alert_id": "A-035",
+    "alert_type": "suspicious_login",
+    "indicators": {
+      "ip": "203.0.113.9",
+      "user": "root"
+    },
+    "expected_verdict": "malicious",
+    "expected_action": "escalate",
+    "expected_severity": "high"
+  },
+  {
+    "alert_id": "A-036",
+    "alert_type": "suspicious_login",
+    "indicators": {
+      "ip": "192.0.2.14",
+      "user": "oguz"
+    },
+    "expected_verdict": "benign",
+    "expected_action": "auto_close",
+    "expected_severity": "low"
+  }
+]

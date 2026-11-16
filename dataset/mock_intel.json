@@ -1,0 +1,146 @@
+{
+  "203.0.113.5": {
+    "verdict": "malicious",
+    "score": 90
+  },
+  "203.0.113.9": {
+    "verdict": "malicious",
+    "score": 90
+  },
+  "203.0.113.14": {
+    "verdict": "malicious",
+    "score": 90
+  },
+  "203.0.113.22": {
+    "verdict": "malicious",
+    "score": 90
+  },
+  "192.0.2.11": {
+    "verdict": "benign",
+    "score": 0
+  },
+  "192.0.2.12": {
+    "verdict": "benign",
+    "score": 0
+  },
+  "192.0.2.13": {
+    "verdict": "benign",
+    "score": 0
+  },
+  "192.0.2.14": {
+    "verdict": "benign",
+    "score": 0
+  },
+  "198.51.100.7": {
+    "verdict": "uncertain",
+    "score": 40
+  },
+  "198.51.100.23": {
+    "verdict": "uncertain",
+    "score": 40
+  },
+  "198.51.100.41": {
+    "verdict": "uncertain",
+    "score": 40
+  },
+  "198.51.100.60": {
+    "verdict": "uncertain",
+    "score": 40
+  },
+  "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f": {
+    "verdict": "malicious",
+    "score": 95
+  },
+  "9e5209374729b35772f3f09ee11432ef9d5d892a2b96678b9d71119937a9581f": {
+    "verdict": "malicious",
+    "score": 95
+  },
+  "a1c63549894f6683c592c59cc82542f51955866e099f3e5c6b62cc2cf091291d": {
+    "verdict": "malicious",
+    "score": 95
+  },
+  "fdb53829039f2a4b6d863d14217e92dab1f1b00228f1d7665924e548a9242269": {
+    "verdict": "malicious",
+    "score": 95
+  },
+  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855": {
+    "verdict": "benign",
+    "score": 0
+  },
+  "9eaa3d9b0f203d869070fed43310c7a33e32df85ddccf0b03a91ce7633f1b8e7": {
+    "verdict": "benign",
+    "score": 0
+  },
+  "b65b8a096a3a9dfb05dcf2bf398b0a413c5aaa6f7509010f25ed563ff357f1f1": {
+    "verdict": "benign",
+    "score": 0
+  },
+  "4594de378f982aeabd992faf1d1d81037e08e023bcd760aad47372e5e58e94fd": {
+    "verdict": "benign",
+    "score": 0
+  },
+  "93c60198403c92bbbfc1031722c204736f7988aac33a24056b27fae997cdc42f": {
+    "verdict": "uncertain",
+    "score": 35
+  },
+  "d653225a69f8c058820281fec06c75ac1c959c5eed83774faa01edab7886186a": {
+    "verdict": "uncertain",
+    "score": 35
+  },
+  "486925495fefc035a58e8139f764624df0b1b819abbd208a190b7ba0a527f57c": {
+    "verdict": "uncertain",
+    "score": 35
+  },
+  "e77ef48c7f582a707e446f675d9a4402c7998eccb7d009ab917c56a1a6cf861a": {
+    "verdict": "uncertain",
+    "score": 35
+  },
+  "secure-login-bank.test": {
+    "verdict": "malicious",
+    "score": 92
+  },
+  "paypa1-verify.test": {
+    "verdict": "malicious",
+    "score": 92
+  },
+  "office365-update.test": {
+    "verdict": "malicious",
+    "score": 92
+  },
+  "free-gift-claim.test": {
+    "verdict": "malicious",
+    "score": 92
+  },
+  "google.com": {
+    "verdict": "benign",
+    "score": 0
+  },
+  "microsoft.com": {
+    "verdict": "benign",
+    "score": 0
+  },
+  "github.com": {
+    "verdict": "benign",
+    "score": 0
+  },
+  "wikipedia.org": {
+    "verdict": "benign",
+    "score": 0
+  },
+  "newly-registered-shop.test": {
+    "verdict": "uncertain",
+    "score": 45
+  },
+  "cdn-static-files.test": {
+    "verdict": "uncertain",
+    "score": 45
+  },
+  "file-share-temp.test": {
+    "verdict": "uncertain",
+    "score": 45
+  },
+  "promo-offers-2026.test": {
+    "verdict": "uncertain",
+    "score": 45
+  }
+}

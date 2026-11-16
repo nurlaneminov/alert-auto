@@ -1,0 +1,182 @@
+[
+  {
+    "alert_id": "A-001",
+    "source": "syslog",
+    "raw": "Nov 16 08:09:00 vpn01 sshd[5552]: Failed password for fexri from 198.51.100.23 port 22 ssh2 [attempts=4 window=5m]"
+  },
+  {
+    "alert_id": "A-002",
+    "source": "edr",
+    "raw": "{\"event\": \"file_detected\", \"host\": \"WS-01\", \"severity\": \"high\", \"timestamp\": \"2026-11-16T08:15:00Z\", \"sha256\": \"275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f\", \"file\": \"invoice.exe\"}"
+  },
+  {
+    "alert_id": "A-003",
+    "source": "syslog",
+    "raw": "Nov 16 08:22:00 vpn01 sshd[6514]: Failed password for aysel from 192.0.2.12 port 22 ssh2 [attempts=1 window=5m]"
+  },
+  {
+    "alert_id": "A-004",
+    "source": "proxy",
+    "raw": "ts=2026-11-16T08:28:00Z src=10.0.0.13 domain=free-gift-claim.test url=https://free-gift-claim.test/login action=allowed user_agent=\"Mozilla/5.0 (Windows NT 10.0)\""
+  },
+  {
+    "alert_id": "A-005",
+    "source": "proxy",
+    "raw": "ts=2026-11-16T08:35:00Z src=10.0.0.18 domain=newly-registered-shop.test url=https://newly-registered-shop.test/login action=allowed user_agent=\"Mozilla/5.0 (Windows NT 10.0)\""
+  },
+  {
+    "alert_id": "A-006",
+    "source": "edr",
+    "raw": "{\"event\": \"file_detected\", \"host\": \"WS-08\", \"severity\": \"low\", \"timestamp\": \"2026-11-16T08:45:00Z\", \"sha256\": \"4594de378f982aeabd992faf1d1d81037e08e023bcd760aad47372e5e58e94fd\", \"file\": \"notes.txt\"}"
+  },
+  {
+    "alert_id": "A-007",
+    "source": "proxy",
+    "raw": "ts=2026-11-16T08:49:00Z src=10.0.0.16 domain=github.com url=https://github.com/login action=allowed user_agent=\"Mozilla/5.0 (Windows NT 10.0)\""
+  },
+  {
+    "alert_id": "A-008",
+    "source": "proxy",
+    "raw": "ts=2026-11-16T08:58:00Z src=10.0.0.11 domain=paypa1-verify.test url=https://paypa1-verify.test/login action=allowed user_agent=\"Mozilla/5.0 (Windows NT 10.0)\""
+  },
+  {
+    "alert_id": "A-009",
+    "source": "edr",
+    "raw": "{\"event\": \"file_detected\", \"host\": \"WS-11\", \"severity\": \"medium\", \"timestamp\": \"2026-11-16T09:05:00Z\", \"sha256\": \"486925495fefc035a58e8139f764624df0b1b819abbd208a190b7ba0a527f57c\", \"file\": \"invoice.exe\"}"
+  },
+  {
+    "alert_id": "A-010",
+    "source": "proxy",
+    "raw": "ts=2026-11-16T09:14:00Z src=10.0.0.12 domain=office365-update.test url=https://office365-update.test/login action=allowed user_agent=\"Mozilla/5.0 (Windows NT 10.0)\""
+  },
+  {
+    "alert_id": "A-011",
+    "source": "proxy",
+    "raw": "ts=2026-11-16T09:19:00Z src=10.0.0.17 domain=wikipedia.org url=https://wikipedia.org/login action=allowed user_agent=\"Mozilla/5.0 (Windows NT 10.0)\""
+  },
+  {
+    "alert_id": "A-012",
+    "source": "syslog",
+    "raw": "Nov 16 09:24:00 vpn01 sshd[8527]: Failed password for hesenali from 198.51.100.41 port 22 ssh2 [attempts=6 window=5m]"
+  },
+  {
+    "alert_id": "A-013",
+    "source": "syslog",
+    "raw": "Nov 16 09:35:00 vpn01 sshd[3045]: Failed password for murad from 198.51.100.60 port 22 ssh2 [attempts=3 window=5m]"
+  },
+  {
+    "alert_id": "A-014",
+    "source": "proxy",
+    "raw": "ts=2026-11-16T09:41:00Z src=10.0.0.14 domain=google.com url=https://google.com/login action=allowed user_agent=\"Mozilla/5.0 (Windows NT 10.0)\""
+  },
+  {
+    "alert_id": "A-015",
+    "source": "syslog",
+    "raw": "Nov 16 09:45:00 vpn01 sshd[5803]: Failed password for nilufer from 198.51.100.7 port 22 ssh2 [attempts=5 window=5m]"
+  },
+  {
+    "alert_id": "A-016",
+    "source": "edr",
+    "raw": "{\"event\": \"file_detected\", \"host\": \"WS-09\", \"severity\": \"medium\", \"timestamp\": \"2026-11-16T09:57:00Z\", \"sha256\": \"93c60198403c92bbbfc1031722c204736f7988aac33a24056b27fae997cdc42f\", \"file\": \"invoice.exe\"}"
+  },
+  {
+    "alert_id": "A-017",
+    "source": "edr",
+    "raw": "{\"event\": \"file_detected\", \"host\": \"WS-05\", \"severity\": \"low\", \"timestamp\": \"2026-11-16T10:03:00Z\", \"sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"file\": \"notes.txt\"}"
+  },
+  {
+    "alert_id": "A-018",
+    "source": "proxy",
+    "raw": "ts=2026-11-16T10:08:00Z src=10.0.0.21 domain=promo-offers-2026.test url=https://promo-offers-2026.test/login action=allowed user_agent=\"Mozilla/5.0 (Windows NT 10.0)\""
+  },
+  {
+    "alert_id": "A-019",
+    "source": "syslog",
+    "raw": "Nov 16 10:17:00 vpn01 sshd[4150]: Failed password for leman from 192.0.2.13 port 22 ssh2 [attempts=2 window=5m]"
+  },
+  {
+    "alert_id": "A-020",
+    "source": "proxy",
+    "raw": "ts=2026-11-16T10:25:00Z src=10.0.0.10 domain=secure-login-bank.test url=https://secure-login-bank.test/login action=allowed user_agent=\"Mozilla/5.0 (Windows NT 10.0)\""
+  },
+  {
+    "alert_id": "A-021",
+    "source": "syslog",
+    "raw": "Nov 16 10:27:00 vpn01 sshd[1750]: Failed password for admin from 203.0.113.5 port 22 ssh2 [attempts=120 window=5m]"
+  },
+  {
+    "alert_id": "A-022",
+    "source": "proxy",
+    "raw": "ts=2026-11-16T10:39:00Z src=10.0.0.20 domain=file-share-temp.test url=https://file-share-temp.test/login action=allowed user_agent=\"Mozilla/5.0 (Windows NT 10.0)\""
+  },
+  {
+    "alert_id": "A-023",
+    "source": "edr",
+    "raw": "{\"event\": \"file_detected\", \"host\": \"WS-02\", \"severity\": \"high\", \"timestamp\": \"2026-11-16T10:42:00Z\", \"sha256\": \"9e5209374729b35772f3f09ee11432ef9d5d892a2b96678b9d71119937a9581f\", \"file\": \"invoice.exe\"}"
+  },
+  {
+    "alert_id": "A-024",
+    "source": "edr",
+    "raw": "{\"event\": \"file_detected\", \"host\": \"WS-07\", \"severity\": \"low\", \"timestamp\": \"2026-11-16T10:50:00Z\", \"sha256\": \"b65b8a096a3a9dfb05dcf2bf398b0a413c5aaa6f7509010f25ed563ff357f1f1\", \"file\": \"notes.txt\"}"
+  },
+  {
+    "alert_id": "A-025",
+    "source": "syslog",
+    "raw": "Nov 16 10:55:00 vpn01 sshd[4814]: Failed password for svc_backup from 203.0.113.14 port 22 ssh2 [attempts=60 window=5m]"
+  },
+  {
+    "alert_id": "A-026",
+    "source": "proxy",
+    "raw": "ts=2026-11-16T11:02:00Z src=10.0.0.19 domain=cdn-static-files.test url=https://cdn-static-files.test/login action=allowed user_agent=\"Mozilla/5.0 (Windows NT 10.0)\""
+  },
+  {
+    "alert_id": "A-027",
+    "source": "proxy",
+    "raw": "ts=2026-11-16T11:12:00Z src=10.0.0.15 domain=microsoft.com url=https://microsoft.com/login action=allowed user_agent=\"Mozilla/5.0 (Windows NT 10.0)\""
+  },
+  {
+    "alert_id": "A-028",
+    "source": "edr",
+    "raw": "{\"event\": \"file_detected\", \"host\": \"WS-10\", \"severity\": \"medium\", \"timestamp\": \"2026-11-16T11:18:00Z\", \"sha256\": \"d653225a69f8c058820281fec06c75ac1c959c5eed83774faa01edab7886186a\", \"file\": \"invoice.exe\"}"
+  },
+  {
+    "alert_id": "A-029",
+    "source": "syslog",
+    "raw": "Nov 16 11:26:00 vpn01 sshd[6977]: Failed password for administrator from 203.0.113.22 port 22 ssh2 [attempts=200 window=5m]"
+  },
+  {
+    "alert_id": "A-030",
+    "source": "edr",
+    "raw": "{\"event\": \"file_detected\", \"host\": \"WS-12\", \"severity\": \"medium\", \"timestamp\": \"2026-11-16T11:31:00Z\", \"sha256\": \"e77ef48c7f582a707e446f675d9a4402c7998eccb7d009ab917c56a1a6cf861a\", \"file\": \"invoice.exe\"}"
+  },
+  {
+    "alert_id": "A-031",
+    "source": "syslog",
+    "raw": "Nov 16 11:39:00 vpn01 sshd[6820]: Failed password for emil from 192.0.2.11 port 22 ssh2 [attempts=1 window=5m]"
+  },
+  {
+    "alert_id": "A-032",
+    "source": "edr",
+    "raw": "{\"event\": \"file_detected\", \"host\": \"WS-03\", \"severity\": \"high\", \"timestamp\": \"2026-11-16T11:45:00Z\", \"sha256\": \"a1c63549894f6683c592c59cc82542f51955866e099f3e5c6b62cc2cf091291d\", \"file\": \"invoice.exe\"}"
+  },
+  {
+    "alert_id": "A-033",
+    "source": "edr",
+    "raw": "{\"event\": \"file_detected\", \"host\": \"WS-04\", \"severity\": \"high\", \"timestamp\": \"2026-11-16T11:56:00Z\", \"sha256\": \"fdb53829039f2a4b6d863d14217e92dab1f1b00228f1d7665924e548a9242269\", \"file\": \"invoice.exe\"}"
+  },
+  {
+    "alert_id": "A-034",
+    "source": "edr",
+    "raw": "{\"event\": \"file_detected\", \"host\": \"WS-06\", \"severity\": \"low\", \"timestamp\": \"2026-11-16T12:00:00Z\", \"sha256\": \"9eaa3d9b0f203d869070fed43310c7a33e32df85ddccf0b03a91ce7633f1b8e7\", \"file\": \"notes.txt\"}"
+  },
+  {
+    "alert_id": "A-035",
+    "source": "syslog",
+    "raw": "Nov 16 12:10:00 vpn01 sshd[2169]: Failed password for root from 203.0.113.9 port 22 ssh2 [attempts=85 window=5m]"
+  },
+  {
+    "alert_id": "A-036",
+    "source": "syslog",
+    "raw": "Nov 16 12:16:00 vpn01 sshd[3803]: Failed password for oguz from 192.0.2.14 port 22 ssh2 [attempts=1 window=5m]"
+  }
+]
