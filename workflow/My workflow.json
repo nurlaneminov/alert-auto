@@ -1,0 +1,61 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "0819a6b0-68f8-47b7-806a-c54ff310b994",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.2,
+      "position": [
+        0,
+        0
+      ],
+      "id": "88fba267-4c2c-4075-bef5-f74c1e019b7c",
+      "name": "Webhook",
+      "webhookId": "0819a6b0-68f8-47b7-806a-c54ff310b994"
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "const body = $json.body;\nconst raw = body.raw;\nconst source = body.source;\n\nconst out = {\n  alert_id: body.alert_id,\n  timestamp: null,\n  alert_type: null,\n  source: source,\n  severity: 'medium',\n  observables: { ip: [], hash: [], domain: [], url: [], user: [], host: [] },\n  extra: {},\n  raw: raw,\n  parse_error: null\n};\n\ntry {\n  if (source === 'syslog') {\n    out.alert_type = 'suspicious_login';\n    const months = {Jan:'01',Feb:'02',Mar:'03',Apr:'04',May:'05',Jun:'06',\n                    Jul:'07',Aug:'08',Sep:'09',Oct:'10',Nov:'11',Dec:'12'};\n    const m = raw.match(/^(\\w{3})\\s+(\\d+)\\s([\\d:]+)\\s(\\S+)/);\n    if (m) {\n      // syslog-da il yoxdur, dataset 2026-dır\n      out.timestamp = `2026-${months[m[1]]}-${m[2].padStart(2, '0')}T${m[3]}Z`;\n      out.observables.host.push(m[4]);\n    }\n    const u = raw.match(/for (?:invalid user )?(\\S+) from (\\d+\\.\\d+\\.\\d+\\.\\d+)/);\n    if (u) { out.observables.user.push(u[1]); out.observables.ip.push(u[2]); }\n    const a = raw.match(/attempts=(\\d+)/);\n    if (a) out.extra.attempts = parseInt(a[1], 10);\n\n  } else if (source === 'edr') {\n    out.alert_type = 'malicious_hash';\n    const j = JSON.parse(raw);\n    out.timestamp = j.timestamp || null;\n    if (j.host) out.observables.host.push(j.host);\n    if (j.sha256) out.observables.hash.push(j.sha256);\n    if (j.severity) out.severity = j.severity;\n\n  } else if (source === 'proxy') {\n    out.alert_type = 'suspicious_url';\n    const kv = {};\n    for (const m of raw.matchAll(/(\\w+)=(\"[^\"]*\"|\\S+)/g)) {\n      kv[m[1]] = m[2].replace(/^\"|\"$/g, '');\n    }\n    out.timestamp = kv.ts || null;\n    if (kv.src) out.observables.ip.push(kv.src);\n    if (kv.domain) out.observables.domain.push(kv.domain);\n    if (kv.url) out.observables.url.push(kv.url);\n\n  } else {\n    out.parse_error = 'namelum source: ' + source;\n  }\n} catch (e) {\n  out.parse_error = e.name + ': ' + e.message;\n}\n\nreturn { json: out };"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        224,
+        0
+      ],
+      "id": "8c078ad0-3c43-4be2-bb53-be723d623ddf",
+      "name": "Code in JavaScript"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "25e9c245-5f7d-486f-8ef6-5b86a4c06587",
+  "meta": {
+    "instanceId": "ef505594ef014bf35539fd69a68cf1da8a9c2c92e876456974be667f90b9a251"
+  },
+  "nodeGroups": [],
+  "id": "DUfreFPZCxML4PL3",
+  "tags": []
+}
